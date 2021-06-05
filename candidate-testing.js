@@ -41,7 +41,7 @@ function gradeQuiz(candidateAnswers) {
 	let correct = 0; 
 	let i = 0
 	for (i = 0; i < questions.length; i ++) {
-		if(candidateAnswers[i] == correctAnswers[i]){
+		if(candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
 			correct++;
 		}
 	}
