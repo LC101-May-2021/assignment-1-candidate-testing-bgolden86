@@ -24,7 +24,8 @@ function askForName() {
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 for (let i = 0; i < questions.length; i++){
-  let answer = input.question((i + 1) + ") " + questions[i] + " ");
+	question = questions[i];
+  let answer = input.question((i + 1) + ") " + question + " ");
 	candidateAnswer.push(answer);
 	console.log(`Your Answer: ${candidateAnswer[i]}`);
 	console.log(`Correct Answer: ${correctAnswers[i]}`);
