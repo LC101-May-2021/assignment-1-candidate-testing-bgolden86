@@ -37,15 +37,14 @@ for (let i = 0; i < questions.length; i++){
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-	let grade = 0;
 	let correct = 0; 
 	let i = 0
 	for (i = 0; i < questions.length; i ++) {
 		if(candidateAnswer[i] == correctAnswers[i]){
-			grade = grade + 10;
 			correct++;
 		}
 	}
+	let grade = (correct/questions.length) * 100;
 
   console.log(">>> Overall Grade: " + grade + "% (" + correct + " of " + questions.length + " responses correct) <<<" );
 	if(grade >= 80){
