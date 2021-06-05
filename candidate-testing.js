@@ -27,8 +27,9 @@ for (let i = 0; i < questions.length; i++){
 	question = questions[i];
   let candidateAnswer = input.question((i + 1) + ") " + question + " ");
 	candidateAnswers.push(candidateAnswer);
+	correctAnswer = correctAnswers[i]
 	console.log(`Your Answer: ${candidateAnswers[i]}`);
-	console.log(`Correct Answer: ${correctAnswers[i]}`);
+	console.log(`Correct Answer: ${correctAnswer}`);
 	console.log();
 }
 
